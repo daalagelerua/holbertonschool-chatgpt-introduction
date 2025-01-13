@@ -30,9 +30,9 @@ class Minesweeper:
 					else:
 						count = self.count_mines_nearby(x, y)
 						print(count if count > 0 else ' ', end=' ')
-					else:
-						print('.', end=' ')
-				print()
+				else:
+					print('.', end=' ')
+			print()
 
 	def count_mines_nearby(self, x, y):
 		count = 0
